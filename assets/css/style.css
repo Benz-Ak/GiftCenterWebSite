@@ -2744,8 +2744,8 @@ small.text {
 
 .navbar {
   z-index: 999;
-  background-color: #2E6D71;
-}
+  /*background-color: #2E6D71;*/
+  background-image: -webkit-gradient(linear, left top, right top, from(#2a6a6c), color-stop(80%, #2a6264), color-stop(60%, #2a6264), color-stop(36%, #0b868b), to(#0e4040));}
 
 .navbar .nav-link {
   cursor: pointer;
@@ -16030,7 +16030,7 @@ footer.style-15 .foot p {
 }
 
 .bg-white {
-  background-color: var(--color-blue7)!important;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2a6a6c), color-stop(80%, #2a6264), color-stop(60%, #2a6264), color-stop(36%, #0b868b), to(#0e4040));
   color: white;
 }
 
