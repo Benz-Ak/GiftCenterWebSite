@@ -1,0 +1,122 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #262424;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+}
+  .section-title {
+    position:sticky;
+    z-index: 1400;
+    top: 0px;
+    padding: 1px 0px;
+    margin-bottom: 12px;
+    background-color: #257176;
+    text-align: center;
+    box-sizing: content-box;
+    box-shadow: 1px 1px 3px  #257176;
+    color: #fff;
+    font-size: large;
+}
+.section-title p {
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.single-team{
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow:5px 5px 15px #000;
+}
+
+.team-img{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+.team-img img{
+  width: 100%;
+  transition: .3s;
+}
+.single-team:hover .team-img img {
+  transform: scale(1.5);
+  filter: brightness(50%);
+}
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all .6s;
+  background: #257176;
+  z-index:5;
+}
+.single-team:hover .team-content{
+  height: 50%;
+}
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all .6s;
+}
+.single-team:hover .team-content{
+  background: #000;
+}
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 23px;
+  margin: 5px;
+}
+.single-team:hover .team-info h3{
+  color: #257176;
+}
+.team-info p {
+  margin-top: 15px;
+  color: #fff;
+}
+.single-team-text p{
+  margin-top: 5px;
+}
+.team-text {
+  color: #fff;
+  padding: 0 10px 5px;
+}
+
+
+.row {
+  height: 50px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: auto auto ;
+  justify-content: center;
+
+}
+
+
+/* ignore the code below */
+
+
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px 35px;
+  border-radius:50px;
+  background:#257176;
+  z-index: 10;
+  box-shadow: 0px 1px 0px darkgray;
+
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:20px;
+  font-family: montserrat;
+}
