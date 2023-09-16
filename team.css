@@ -1,20 +1,25 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #262424;
+  border: none;
+  box-sizing: border-box;
+  font-family: montserrat;
+
 }
 
 .section-title h2 {
   text-transform: uppercase;
 }
   .section-title {
-    position:sticky;
-    z-index: 1400;
-    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     padding: 1px 0px;
     margin-bottom: 12px;
-    background-color: #257176;
-    text-align: center;
+    background: url("./assets/img/team/8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     box-sizing: content-box;
     box-shadow: 1px 1px 3px  #257176;
     color: #fff;
@@ -88,35 +93,66 @@ body{
 }
 
 
-.row {
-  height: 50px;
+.row >div {
   display: grid;
-  gap: 25px;
-  grid-template-columns: auto auto ;
+  gap: 44px;
+  height: 100vh;
+  grid-template-columns: 15% 15% 15% 15%;
   justify-content: center;
-
+  align-items: center;
+  background-image: url("./assets/img/team/about_s4_bubble.png");
+  background-blend-mode: darken;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.logo{
+  width: 5%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo img{
+  width: 100%;
+}
 
+.headerTitle {
+  text-align: center;
+  height: 90%;
+  padding-top: 14rem;
+    font-size: 2rem;
+    font-weight: 100;
+
+}
+.nav{
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
 /* ignore the code below */
 
 
-.link-area
+.nav .contactUs , .link-area
 {
-  position:fixed;
-  bottom:20px;
-  left:20px;  
   padding:15px 35px;
   border-radius:50px;
   background:#257176;
   z-index: 10;
-  box-shadow: 0px 1px 0px darkgray;
+  box-shadow: 0px 1px 0px #257176;
 
 }
-.link-area a
+.nav a, .link-area a
 {
   text-decoration:none;
   color:#fff;
-  font-size:20px;
   font-family: montserrat;
+}
+
+.link-area{
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
 }
