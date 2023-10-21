@@ -1,55 +1,76 @@
-body{
+body {
   margin: 0;
   padding: 0;
   border: none;
   box-sizing: border-box;
   font-family: montserrat;
-
 }
 
-.section-title h2 {
+html::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
   text-transform: uppercase;
 }
-  .section-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    padding: 1px 0px;
-    margin-bottom: 12px;
-    background: url("./assets/img/team/8.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: content-box;
-    box-shadow: 1px 1px 3px  #257176;
-    color: #fff;
-    font-size: large;
-}
-.section-title p {
+
+.headerTitle p {
   text-transform: uppercase;
-  font-weight:bold;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#214848),
+      color-stop(30%, #258989),
+      color-stop(30%, #147c7c),
+      color-stop(73%, #2e5959),
+      to(#206262));
+  background-image: -webkit-linear-gradient(left,
+      #1a9b9b 0%,
+      #48c0c9 30%,
+      #08e0e7 30%,
+      #09e0d6 73%,
+      #baeff3 100%);
+  background-image: -o-linear-gradient(left,
+      #1a9b9b 0%,
+      #48c0c9 30%,
+      #08e0e7 30%,
+      #09e0d6 73%,
+      #baeff3 100%);
+  background-image: linear-gradient(to right,
+      #1a9b9b 0%,
+      #11d6bc 30%,
+      #95ebe3 30%,
+      #33c5b9 73%,
+      #adadad 100%);
 }
-.single-team{
+
+.single-team {
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  box-shadow:5px 5px 15px #000;
+  box-shadow: 5px 5px 15px #000;
 }
 
-.team-img{
+.team-img {
   position: relative;
   z-index: 5;
   overflow: hidden;
 }
-.team-img img{
+
+.team-img img {
   width: 100%;
-  transition: .3s;
+  transition: 0.3s;
 }
+
 .single-team:hover .team-img img {
   transform: scale(1.5);
   filter: brightness(50%);
 }
+
 .team-content {
   height: 80px;
   width: 100%;
@@ -57,101 +78,111 @@ body{
   text-align: center;
   overflow: hidden;
   bottom: 0;
-  transition: all .6s;
+  transition: all 0.6s;
   background: #257176;
-  z-index:5;
+  z-index: 5;
 }
-.single-team:hover .team-content{
+
+.single-team:hover .team-content {
   height: 50%;
 }
+
 .team-info {
   padding: 5px 20px 5px 20px;
-  transition: all .6s;
+  transition: all 0.6s;
 }
-.single-team:hover .team-content{
+
+.single-team:hover .team-content {
   background: #000;
 }
+
 .single-team .team-content .team-info h3 {
   text-transform: uppercase;
   color: #fff;
   font-size: 23px;
   margin: 5px;
 }
-.single-team:hover .team-info h3{
+
+.single-team:hover .team-info h3 {
   color: #257176;
 }
+
 .team-info p {
   margin-top: 15px;
   color: #fff;
 }
-.single-team-text p{
+
+.single-team-text p {
   margin-top: 5px;
 }
+
 .team-text {
   color: #fff;
   padding: 0 10px 5px;
 }
 
+.row {
+  margin: 4rem 0;
+}
 
-.row >div {
+.row>div {
   display: grid;
   gap: 44px;
-  height: 100vh;
-  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-columns: 21% 21% 21% 21%;
+  grid-template-rows: auto auto;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/img/team/about_s4_bubble.png");
+  background-image: url(./assets/img/team/about_s4_bubble.png);
   background-blend-mode: darken;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.logo{
+.logo {
   width: 5%;
   border-radius: 50%;
   overflow: hidden;
 }
-.logo img{
+
+.logo img {
   width: 100%;
 }
 
 .headerTitle {
   text-align: center;
-  height: 90%;
-  padding-top: 14rem;
-    font-size: 2rem;
-    font-weight: 100;
-
+  font-size: 2rem;
+  font-weight: 100;
 }
-.nav{
+
+.nav {
   display: flex;
-  height: 20%;
+  /* height: 34%; */
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
 }
+
 /* ignore the code below */
 
-
-.nav .contactUs , .link-area
-{
-  padding:15px 35px;
-  border-radius:50px;
-  background:#257176;
+.nav .contactUs,
+.link-area {
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: #257176;
   z-index: 10;
   box-shadow: 0px 1px 0px #257176;
-
 }
-.nav a, .link-area a
-{
-  text-decoration:none;
-  color:#fff;
+
+.nav a,
+.link-area a {
+  text-decoration: none;
+  color: #fff;
   font-family: montserrat;
 }
 
-.link-area{
+.link-area {
   margin: auto;
   margin-bottom: 2rem;
   text-align: center;
