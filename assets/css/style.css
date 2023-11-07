@@ -2508,6 +2508,7 @@ small.text {
 .side_menu.style-7 .content .logo {
   padding: 30px 7vw;
   border-bottom: 1px solid #9993;
+  background-color: #257275;
 }
 
 .side_menu.style-7 .content .logo img {
@@ -4318,7 +4319,7 @@ header.style-7 .info h1 .text-grad {
   background-image: -o-linear-gradient(left, #1a9b9b 0%, #48c0c9 30%, #08e0e7 30%, #09e0d6 73%, #baeff3 100%);
   background-image: linear-gradient(to right, #1a9b9b 0%, #11d6bc 30%, #95ebe3 30%, #33c5b9 73%, #adadad 100%);
 }
-}
+
 
 header.style-7 .img {
   position: relative;
@@ -16030,8 +16031,8 @@ footer.style-15 .foot p {
 }
 
 .bg-white {
-  background-image: -webkit-gradient(linear, left top, right top, from(#2a6a6c), color-stop(80%, #2a6264), color-stop(60%, #2a6264), color-stop(36%, #0b868b), to(#0e4040));
-  color: white;
+  color: #257275;
+  font-weight: 600;
 }
 
 .fw-bold {
@@ -18736,7 +18737,6 @@ footer.style-15 .foot p {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
   footer.style-2 .foot_links a {
     width: 50%;
     margin: 10px 0 !important;
