@@ -17,34 +17,7 @@ h2 {
 .headerTitle p {
   text-transform: uppercase;
   font-weight: bold;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#214848),
-      color-stop(30%, #258989),
-      color-stop(30%, #147c7c),
-      color-stop(73%, #2e5959),
-      to(#206262));
-  background-image: -webkit-linear-gradient(left,
-      #1a9b9b 0%,
-      #48c0c9 30%,
-      #08e0e7 30%,
-      #09e0d6 73%,
-      #baeff3 100%);
-  background-image: -o-linear-gradient(left,
-      #1a9b9b 0%,
-      #48c0c9 30%,
-      #08e0e7 30%,
-      #09e0d6 73%,
-      #baeff3 100%);
-  background-image: linear-gradient(to right,
-      #1a9b9b 0%,
-      #11d6bc 30%,
-      #95ebe3 30%,
-      #33c5b9 73%,
-      #adadad 100%);
+  font-size: inherit;
 }
 
 .single-team {
@@ -150,8 +123,9 @@ h2 {
 }
 
 .headerTitle {
+  padding: 1em 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: 100;
 }
 
@@ -187,3 +161,42 @@ h2 {
   margin-bottom: 2rem;
   text-align: center;
 }
+
+
+/*********************************media query*************************************/
+
+@media (max-width: 998px) { 
+
+  body{
+    
+    
+  }
+
+  .row>div {
+    display: grid;
+    gap: 44px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/img/team/about_s4_bubble.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+ }
+
+ @media (max-width: 450px) { 
+  .row>div {
+    display: grid;
+    gap: 44px;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/img/team/about_s4_bubble.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+ }
