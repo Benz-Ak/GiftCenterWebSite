@@ -2133,14 +2133,7 @@ small.text {
   background-image: linear-gradient(to right, #1a9b9b 0%, #11d6bc 30%, #95ebe3 30%, #33c5b9 73%, #adadad 100%);
 }
 
-.section-head.style-4 h5 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #257176;
-  display: inline-block;
-  text-transform: capitalize;
-  margin: 0 10px;
-}
+
 
 /* --------------- section style-5 --------------- */
 .section-head.style-5 h2 {
